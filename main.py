@@ -27,7 +27,7 @@ class Listener(stomp.ConnectionListener):
             # Acknowledging messages is important in client-individual mode
             self._mq.ack(id=headers["ack"], subscription=headers["subscription"])
 
-        if headers["destination"].startswith("/topic/TRAIN_MVT_"):
+        if headers["destination"].startswith("/topic/TRAIN_MVT_FREIGHT"):
             trust.print_trust_frame(parsed_body)
         elif headers["destination"].startswith("/topic/TD_"):
             td.print_td_frame(parsed_body)
@@ -72,9 +72,9 @@ if __name__ == "__main__":
     # Determine topic to subscribe
     topic = None
     if args.trust:
-        topic = "/topic/TRAIN_MVT_ALL_TOC"
+        topic = "/topic/TRAIN_MVT_FREIGHT"
     elif args.td:
-        topic = "/topic/TD_ALL_SIG_AREA"
+        topic = "/topic/TD_WCS_SIG_AREA"
 
     # Subscription
     subscribe_headers = {

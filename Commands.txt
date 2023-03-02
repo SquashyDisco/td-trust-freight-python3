@@ -1,0 +1,6 @@
+source venv/bin/activate
+
+# To show TD messages
+./main.py --td
+# To show TRUST messages
+./main.py --trust
