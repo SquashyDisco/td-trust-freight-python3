@@ -1,10 +1,16 @@
 # Python3/stomp.py TD/TRUST demo script
-This is a short demonstration script which outputs C-class messages from
-Network Rail's TD feed, or basic information from the train movements
-feed.
+A heavily amended TRUST script to view Freight movements across the UK Railway Network, 
+built on the work of the openraildata and all who sail in her.  
+
+\\ Outputs
+With this script, you'll get an output in Terminal that looks like:
+
+"Vintage Trains 1Z39 has just passed Heath Jn 0 mins ON TIME. The next report will be at Caerphilly in approx 11 mins time."
+
+Whatever you choose to do with that output is entirely up to you!
 
 ## Setup
-You must [register an account](https://datafeeds.networkrail.co.uk/ntrod/login)
+You must [register an account](https://publicdatafeeds.networkrail.co.uk/ntrod/login)
 for the Network Rail data feeds.
 When your account is active, you can enable the feeds - log in, go to "my feeds",
 and click on the "TD" link on the left of the page. Select "All Signalling Areas"
