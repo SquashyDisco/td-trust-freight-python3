@@ -2,7 +2,7 @@
 A heavily amended TRUST script to view Freight movements across the UK Railway Network, 
 built on the work of the openraildata and all who sail in her.  
 
-\\ Outputs
+## Outputs
 With this script, you'll get an output in Terminal that looks like:
 
 "Vintage Trains 1Z39 has just passed Heath Jn 0 mins ON TIME. The next report will be at Caerphilly in approx 11 mins time."
